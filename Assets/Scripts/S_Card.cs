@@ -34,8 +34,8 @@ public class S_Card : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        m_Color = (EColor)Random.Range( 0, 3 );
-        m_Symbol = (ESymbol)Random.Range( 0, 5 );
+     //   m_Color = (EColor)Random.Range( 0, 3 );
+     //   m_Symbol = (ESymbol)Random.Range( 0, 5 );
 
         m_FrontMat = m_Front.GetComponent<Renderer>();
 
@@ -62,5 +62,12 @@ public class S_Card : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
        
+    }
+
+
+    public void SetValues(int color, int symbol )
+    {
+        m_Color = (EColor)color;
+        m_Symbol = (ESymbol)symbol;
     }
 }
